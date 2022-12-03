@@ -42,5 +42,7 @@ static string GetYouTubeUrl(int episodeNumber)
         30 => "Sp2nxlrQ89w",
         _ => string.Empty,
     };
-    return vidCode is { Length: > 0 } ? $"https://www.youtube.com/watch?v={vidCode}" : string.Empty;
+    return vidCode is { Length: > 0 }
+        ? $"https://www.youtube.com/watch?v={vidCode}"
+        : "https://www.youtube.com/@alanbecker";
 }

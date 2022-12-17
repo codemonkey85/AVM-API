@@ -1,7 +1,9 @@
+const string alanBeckerYouTube = "https://www.youtube.com/@alanbecker";
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "AVM-API");
+app.MapGet("/", () => alanBeckerYouTube);
 app.MapGet("/episode/{episodeNumber:int}", GetYouTubeUrl);
 
 app.Run();
@@ -10,15 +12,15 @@ static string GetYouTubeUrl(int episodeNumber)
 {
     var vidCode = episodeNumber switch
     {
-        1 => "sVhWjSKywAQ",
-        2 => "J_PRXuovweE",
-        3 => "cPWPAjYb5eI",
-        4 => "KXgaSaME-Ms",
-        5 => "c9DrryMw248",
-        6 => "y5zW1c30MGQ",
-        7 => "z2sRTaa9lZU",
-        8 => "E7x2pH6yiL4",
-        9 => "_fPhQLM4Iac",
+        01 => "sVhWjSKywAQ",
+        02 => "J_PRXuovweE",
+        03 => "cPWPAjYb5eI",
+        04 => "KXgaSaME-Ms",
+        05 => "c9DrryMw248",
+        06 => "y5zW1c30MGQ",
+        07 => "z2sRTaa9lZU",
+        08 => "E7x2pH6yiL4",
+        09 => "_fPhQLM4Iac",
         10 => "wkedWWxRABM",
         11 => "WTPt07NO61A",
         12 => "O3JPzQYJTZk",
@@ -44,5 +46,5 @@ static string GetYouTubeUrl(int episodeNumber)
     };
     return vidCode is { Length: > 0 }
         ? $"https://www.youtube.com/watch?v={vidCode}"
-        : "https://www.youtube.com/@alanbecker";
+        : alanBeckerYouTube;
 }

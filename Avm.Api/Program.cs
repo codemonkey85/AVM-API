@@ -42,6 +42,7 @@ static string GetYouTubeUrl(int episodeNumber)
         28 => "o5RhbG3tOT8",
         29 => "4P6l35M61GY",
         30 => "Sp2nxlrQ89w",
+        31 => "mOo9iTx0aMQ",
         _ => string.Empty,
     };
     return vidCode is { Length: > 0 }

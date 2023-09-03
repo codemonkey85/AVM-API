@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avm.Api", "Avm.Api\Avm.Api.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{693D716E-347E-4B8B-8A7B-C1C2681F1ECB}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		global.json = global.json
 	EndProjectSection
 EndProject
